@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: #000000; 
+    background: -webkit-linear-gradient(120deg, #f6d365 0%, #FF8100 100%);  
+    background: linear-gradient(120deg, #f6d365 0%, #FF8100 100%); 
+    background-attachment: fixed;
+    color: #354538;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(120deg, #f6d365 0%, #FF8100 100%);;
+
+}
+
+a {
+    text-decoration: none;
+    color: #354548;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.app__container {
+    padding-top: 50px;
+}
+
+.app__row {
+    height: 90vh;
+}
+
+
+
+
+.app__main-content {
+    /* background-color: #fff; */
+    background-color: #502E2D;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+    color: #FFFFFF;
+}
+
+/* sidebar */
+.sidebar {
+    background-color: #502E2D;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+.sidebar__avatar {
+    height: 110px;
+    width: 120px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+.sidebar__icon {
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+}
+
+.sidebar__name {
+    font-family: 'Kaushan Script';
+    margin: 20px 0;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+}
+
+.sidebar__resume {
+    color: #FFFFFF;
+}
+
+.sidebar .sidebar__icon:hover {
+    transform: scale(1.2);
+}
+
+.sidebar__name>span {
+    color: #FF8100;
+}
+
+.sidebar__item {
+    margin-bottom: 6px;
+    padding-top: 6px;
+    height: 40px;
+    font-size: 1.05rem;
+    border-radius: 30px;
+}
+
+.sidebar__title {
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    color: #502E2D;
+    font-weight: bold;
+}
+
+.sidebar__contact {
+    background-color: #E7A545;
+    padding: 2px 0;
+    margin: 20px -15px;
+
+}
+
+.sidebar__email {
+    background-image: linear-gradient(120deg, #f6d365 0%, #FF8100 100%);;
+
+    border-radius: 30px;
+    color: #fff;
+    margin: 15px 25px 0px;
+    cursor: pointer;
+    transition: all 3s linear;
+}
+
+.sidebar__email:hover {
+    transform: scale(1.2);
+}
+
+.sidebar__github:hover,
+.sidebar__resume:hover {
+    background-color: #f1f1f2;
+    color: #000;
+}
+
+@media(max-width:991px) {
+    .app__main-content {
+        margin: 30px 0;
+    }
+}
+
+/* navbar */
+
+.navbar__items {
+    display: flex;
+}
+
+.navbar__active {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF8100;
+    border-bottom: 4px solid #FF8100;
+}
+
+.navbar__item {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #89C5BD;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.navbar__item:hover {
+    background: -webkit-linear-gradient(#FF8100, #E4584B);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+/* about */
+
+.about {
+    padding: 20px;
+    margin: -35px;
+}
+
+.about__intro {
+    font-size: 1.1rem;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.about__container {
+    background-color: #E7A545;
+    padding: 30px 20px;
+}
+
+.about__heading {
+    font-size: 25px;
+    font-weight: 700;
+    color: #354358;
+    margin-left: 10px;
+}
+
+/* skill-card */
+.skill-card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.skill-card__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-card__title {
+    color:  #E4584B;
+}
+
+.skill-card-body {
+    margin-left: 15px;
+
+}
+
+.skill_card__content {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6e7e91;
+}
+
+/* resume */
+
+.resume {
+    padding-top: 20px;
+}
+
+.resume-card__heading,
+.reume-language__heading {
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E7A545;
+}
+
+.resume-card__heading {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #E7A545;
+}
+
+.resume-card__body {
+    margin-top: 10px;
+}
+
+.resume-card__title {
+    font-weight: 700;
+
+}
+
+.resume-body img {
+    width: 75%;
+    height: auto;
+}
+
+.resume-card__name {
+    font-size: 16px;
+}
+
+.resume-card__details {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.intro {
+    width:100%;
+    height:auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: #E7A545;
+    padding: 2.5%;
+}
+
+.intro div{
+    color:#502E2D;
+}
+
+.branch {
+    color: #6e7e91;
+}
+
+
+/* bar */
+.bar {
+    width: 100%;
+    background-color: #f1f2f3;
+    border-radius: 20px;
+    margin-bottom: 12px;
+
+}
+
+.bar__icon {
+    width: 15px;
+    height: 15px;
+}
+
+.bar__wrapper {
+    background-image: linear-gradient(90deg, #FF8100,#E4584B);
+    border-radius: 20px;
+    padding: 4px 14px;
+    color: #fff;
+    font-size: 0.9rem
+}
+
+.resume-card__body .bar__wrapper{
+    background-image: linear-gradient(90deg, #FF8100, #FF8100);
+}
+
+.resume-card__body .bar__wrapper:hover{
+    background-image: linear-gradient(90deg, #ffffff, #ffffff);
+    color: black;
+}
+
+
+/* projects */
+.projects {
+    height: 72vh;
+    padding-top: 30px;
+    overflow-y: auto;
+}
+
+.projectCard__wrapper {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+}
+
+.projectCard__image {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    border: 1px solid #FF8100;
+    transition: transform 0.3s linear;
+}
+
+.projectCard__image:hover {
+    transform: scale(1.05);
+}
+
+.projectCard__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.projectCard__title {
+    margin-top: 12px;
+    font: size 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__navbar {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.projects__navbar>div {
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.contact-section {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.contact-section .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.contact-section .contact-container .contact1-header {
+    margin-bottom: 15px;
+}
+
+.contact-section .contact-container .contact1-header h3 {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgb(90, 88, 88);
+}
+
+.contact-section .contact-container .row {
+    margin-top: 4%;
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-section .contact-container .row .col {
+    width: 50%;
+}
+
+.contact-section .contact-container .row .col .inputbox {
+    position: relative;
+    width: 80%;
+    height: 40px;
+
+}
+
+.contact-section .contact-container .row .col .inputbox textarea,
+.contact-section .contact-container .row .col .inputbox input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.contact-section .contact-container .row .col .inputbox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contact-section .contact-container .row .col .inputbox .line {
+    position: absolute;
+    bottom: 0;
+    background-color: #E7A545;
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.contact-section .contact-container .row .col .inputbox input:focus + .text,
+.contact-section .contact-container .row .col .inputbox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.contact-section .contact-container .row .col .inputbox input:focus ~ .line,
+.contact-section .contact-container .row .col .inputbox input:valid ~ .line {
+    height: 100%;
+}
+
+/* .contact-section .contact-container .row:last-child { 
+    width: 90%;
+    flex-flow: column;
+     justify-content: center;
+    align-self: center; 
+}
+
+.contact-section .contact-container .row:last-child .col {
+    width: 100%;
+}
+
+.contact-section .contact-container .row:last-child  .col .inputbox {
+    margin: 2.5%, 1%;
+} */
+
+
+.contact-section .contact-container .row .col .inputbox.textarea {
+    position: relative;
+    width: 180%; 
+    height: 80px;
+    padding: 5px 0;
+}
+
+.contact-section .contact-container .row .col .inputbox.textarea textarea {
+    width: 100%;
+    resize: none;
+}
+
+/* .contact-section .contact-container .row .col .inputbox.textarea .line {
+    height: 2px;
+} */
+
+
+
+.contact-section .contact-container .row .col .inputbox textarea:focus + .text,
+.contact-section .contact-container .row .col .inputbox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.contact-section .contact-container .row .col .inputbox textarea:focus ~ .line,
+.contact-section .contact-container .row .col .inputbox textarea:valid ~ .line {
+   height: 100%;
+}
+
+
+/* ======== Submit Button======= */
+
+.contact-section .contact-container .row button {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    /* margin: 15px 15px 0 0; */
+    border: none;
+    margin: 0 3.75%;
+    background: linear-gradient(120deg, #f6d365 0%, #FF8100 100%);
+}
+
+.contact-section .contact-container .row button svg,
+.contact-section .contact-container .row button svg rect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 40px;
+    fill: transparent;
+}
+
+.contact-section .contact-container .row button svg rect{
+    stroke: #000;
+    stroke-width: 6;
+    stroke-dasharray: 400, 400;
+    stroke-dashoffset: 0;
+    transition: 1s;
+}
+
+.contact-section .contact-container .row button:hover svg rect{
+    stroke-dasharray: 100, 260;
+    stroke-dashoffset: 160;
+}
+.contact-section .contact-container .row button:focus {
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    .contact-section .contact-container .row .col .inputbox {
+        margin: 7.5% 7.5%;
+    }
+}
